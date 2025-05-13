@@ -39,7 +39,7 @@ boxplot(CWM_RootDepth ~ Exposure_Depth, data = CategoryLevel_RootDepth,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM at category level", at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6, ylim = c(0, 40))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.5, ylim = c(0, 40))
 
 stripchart(CWM_RootDepth ~ Exposure_Depth,
            data = CategoryLevel_RootDepth,
@@ -55,14 +55,14 @@ label=c("Exposed", "Semi-sheltered")
 axis(1, 
      at = seq(1.50 , 5 , 3), 
      labels = label , 
-     tick=FALSE , cex.axis=1.6)
+     tick=FALSE , cex.axis=1.5)
 
 
 boxplot(CWM_RootDepth ~ Exposure_Depth, data = SiteLevel_RootDepth,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM at site level", at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6, ylim = c(0, 40))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.5, ylim = c(0, 40))
 
 stripchart(CWM_RootDepth ~ Exposure_Depth,
            data = SiteLevel_RootDepth,
@@ -78,7 +78,7 @@ label=c("Exposed", "Semi-sheltered")
 axis(1, 
      at = seq(1.5 , 5 , 3), 
      labels = label , 
-     tick=FALSE , cex.axis=1.6)
+     tick=FALSE , cex.axis=1.5)
 
 ############## FDis ##############
 
@@ -86,12 +86,12 @@ boxplot(FDis_RootDepth ~ Exposure_Depth, data = CategoryLevel_RootDepth,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "FDis at category level", at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6, ylim = c(0, 1.4))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.5, ylim = c(0, 1.4))
 
 
 legend("topright", legend = c("Shallow", "Deep"), 
        col=c("bisque","azure2"),
-       pch = 15, bty = "n", pt.cex = 3, cex = 1.6,  horiz = F)
+       pch = 15, bty = "n", pt.cex = 3, cex = 1.5,  horiz = F)
 
 stripchart(FDis_RootDepth ~ Exposure_Depth,
            data = CategoryLevel_RootDepth,
@@ -107,14 +107,14 @@ label=c("Exposed", "Semi-sheltered")
 axis(1, 
      at = seq(1.50 , 5 , 3), 
      labels = label , 
-     tick=FALSE , cex.axis=1.6)
+     tick=FALSE , cex.axis=1.5)
 
 
 boxplot(FDis_RootDepth ~ Exposure_Depth, data = SiteLevel_RootDepth,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "FDis at site level", at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6, ylim = c(0, 1.4))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.5, ylim = c(0, 1.4))
 
 stripchart(FDis_RootDepth ~ Exposure_Depth,
            data = SiteLevel_RootDepth,
