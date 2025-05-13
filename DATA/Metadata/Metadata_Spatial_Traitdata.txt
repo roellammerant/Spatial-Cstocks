@@ -1,0 +1,89 @@
+### METADATA for Spatial_Campaign_Data.xlsx
+
+## Data collected by Roel lammerant, Jenna Hölttä, Janina Pykäri, Nishant Nishant, Anna Villnäs, Sofia Wikström, Alf Norkko & Camilla gustafsson, august 2023.
+## Correspondence concerning these data should be directed to Roel Lammerant (Roel.lammerant@outlook.be).
+
+## Description: 
+Spatial field survey in august 2023, were macrophyte material was destructively harvested at 20 sites along in the Pojo_Hanko archipelago, Finland.  
+Data were collected through the use of high precision scales, a flatbed scanner, WinRHIZO and imageJ (Rueden et al. 2017)
+
+## Metadata are in the form of: # Variable - description with units
+
+# Variable list:
+
+# Tab Exposed
+
+# Site - The site code from where macrophyte material was destructively harvested made op out of depth, site number and quadrat number
+# Depth - Depth category, D (i.e. deep) and S (i.e. shallow)
+# Site number - Number of the sites, ranges from 1-5
+# Species - Six letter code of the species.
+# Max height (cm) - Maximum height in cm
+# Individual count - The numbers of individuals present in the destructively harvested plant material
+# Leaf area 1 [Left/Above] (cm2) - Leaf area 1 in cm^2
+# Leaf perimeter  1 [Left/Above] (cm) - Leaf perimeter 1 in cm
+# Leaf area 2 [Right/Below] (cm2) - Leaf area 2 in cm^2
+# Leaf perimeter 2 [Right/Below] (cm) -Leaf perimeter 2 in cm
+# Leaf dry mass 1 [Left/Above] (mg) - Dry mass weight of leaf 1 used for trait measurements in mg
+# Leaf dry mass 2 [Right/Below] (mg) - Dry mass weight of leaf 2 used for trait measurements in mg
+# Leaf dry mass eppendorf (mg) - Dry mass weight of the leaves used for elemental analasys in mg
+# Stem volume (cm3) - Stem volume in cm^3
+# Stem dry mass (mg) - Drymass weight of stem tissue used for trait measurements in mg
+# Rhizoom length (cm) - Rhizome length in cm
+# Rhizoom trait dry mass(mg) - Drymass weight of rhizome tissue used for trait measurements in mg
+# Rhizoom dry mass (mg) - Drymass weight of rhizome tissue in the collecte quadrat, which was not used for triat measurements in mg
+# Rhizoom eppendorf(mg) - Dry mass weight of the rhizome used for elemental analasys in mg
+# Max rooting depth (cm) - Maximum rooting depth in cm
+# Root dry mass (mg) - Drymass weight of root tissue in the collecte quadrat, which was not used for elemental measurements in mg
+# Root eppendorf (mg) - Drymass weight of root tissue used for elemental measurements in mg
+# Above ground dry mass (mg) - Drymass weight of aboveground tissue in the collecte quadrat, which was not used for trait measurements in mg
+# Detritus dry mass (mg) - Drymass weight of detritus present in the collected quadrat in mg
+# Tolypella (mg) - Drymass weight of Tolypella (Algae) present in the collected quadrat in mg
+# Chorda (mg) - Drymass weight of Chorda (Algae) present in the collected quadrat in mg
+# Notes - Notes for the collected samples
+
+# Total aboveground dry mass (mg) - Dry mass weight of all aboveground biomass present in the quadrat in mg
+# Total belowground dry mass (mg) - Dry mass weight of all belowground biomass present in the quadrat in mg
+# Total rhizome dry mass (mg) - Dry mass weight of all rhizome biomass present in the quadrat in mg
+# Total root dry mass (mg) - Dry mass weight of all root biomass present in the quadrat in mg
+# Total dry mass (mg) - Dry mass weight of all biomass present in the quadrat in mg
+# Algae dry mass (mg) - Dry mass weight of all algae biomass present in the quadrat in mg
+# Specific leaf area 1 (mm2/mg) - The ratio of leaf area 1 to dry mass of the leaf in cm^2/mg
+# Specific leaf area 2 (mm2/mg) - The ratio of leaf area 2 to dry mass of the leaf in cm^2/mg
+# Leaf area - perimeter ratio 1 - The ratio of leaf area to perimeter of leaf 1 in %
+# Leaf area - perimeter ratio 2 - The ratio of leaf area to perimeter of leaf 2 in %
+# Total leaf area (cm2) - A proxy of total leaf area in cm2
+# Stem density (mg/cm3) - The ratio of stem dry mass to stem volume in mg/cm^3
+# Specific root length (cm/mg) - The ratio of root length to dry mass of the root system in cm/mg
+# Root tissue density (mg/cm3) - The ratio of root dry mass to root volume in mg/cm^3
+# Specific rhizome length (cm/mg) - The ratio of rhizone length to dry mass of the root rhizome in cm/mg
+
+# Tab Semi
+
+# Fucus - Drymass weight of Fucus vesiculosus(Algae) present in the collected quadrat in mg
+
+All other columns are the same as in the exposed tab
+
+# Tab Sheltered
+
+# Green algae (mg) - Drymass weight of Green Alga present in the collected quadrat in mg
+# Vaucheria (mg) - Drymass weight of Vaucheria (Algae) present in the collected quadrat in mg
+# Chara globilaris (mg) - Drymass weight of Chara globilaris (Algae) present in the collected quadrat in mg
+# Chara sp. (mg) - Drymass weight of Chara sp. (Algae) present in the collected quadrat in mg
+# Reed (mg) - Drymass weight of dead reed biomass present in the collected quadrat in mg
+# Fucus - Drymass weight of Fucus vesiculosus (Algae) present in the collected quadrat in mg
+
+All other columns are the same as in the exposed tab
+
+# Tab Pojo
+
+# Detritus + algae (mg) - Drymass weight of detritus interspersed with Algae present in the collected quadrat in mg
+# Green algae (mg) - Drymass weight of Green Alga present in the collected quadrat in mg
+# Chara sp. (mg) - Drymass weight of Chara sp. (Algae) present in the collected quadrat in mg
+# Aegagrophila limnaeib (mg) - Drymass weight of Aegagrophila limnaeib (Algae) present in the collected quadrat in mg
+# Vaucheria (mg) - Drymass weight of Vaucheria (Algae) present in the collected quadrat in mg
+
+
+
+
+All other columns are the same as in the exposed tab
+

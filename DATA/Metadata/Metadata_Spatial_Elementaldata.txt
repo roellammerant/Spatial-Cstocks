@@ -1,0 +1,34 @@
+### METADATA for C_N.xlsx
+
+## Data processed by Roel lammerant and Jenna Hölttä, Tvärminne Zoological Station, Finland - in collaboration with Janina Pykäri, Nishant Nishant, Anna Villnäs, Sofia Wikström, Alf Norkko & Camilla gustafsson.
+## Correspondence concerning these data should be directed to Roel Lammerant (Roel.lammerant@outlook.be).
+
+## Description: 
+Spatial field survey in august 2023, were macrophyte material was destructively harvested at 20 sites along in the Pojo_Hanko archipelago, Finland.  
+Elemental analyses were conducted on a subset of individuals, for up to four indivudals of each species per site.
+Dried tissue was homogenized using sterile stainless-steel beads and a ball mill (Retsch MM 400). 
+Samples were micro-weighed by hand and nalyzed using a Sercon Isotope Ratio Mass Spectrometer at Tvärminne Zoological Staion.
+
+## Metadata are in the form of: # Variable - description with units
+
+# Variable list:
+
+# Position  - Sample position on the well plate
+# Abbreviation - Abbreviation for samples in the well plate with site, species and tissue information
+# Exposure - Exposure categories, consisting of Exposed, Semi, Sheltered and Pojo
+# Organism - Origin of macrophyte material (Algae or Plant)
+# Species - Abbreviations for the collected species
+# Tissue - Tissue used for elemental analyses
+# dwt(mg) - Dry weight of the sample used for elemental analyses in mg
+# N (µg) - Amount of particulate organic nitrogen in µg
+# δ15N - Nitrogen stable isotope measurement
+# C (µg) - Amount of particulate organic carbon in µg
+# δ13C - Carbon stable isotope measurement
+# N (µg/mg) - The amount of particulate organic nitrogen per dry weight of the sampled tissue in µg/mg
+# C (µg/mg) - The amount of particulate organic carbon per dry weight of the sampled tissue in µg/mg
+
+
+
+
+
+

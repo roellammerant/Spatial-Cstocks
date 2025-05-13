@@ -1,0 +1,27 @@
+### METADATA for Site environmental.xlsx
+
+## Data processed by Nishant Nishant, Tvärminne Zoological Station, Finland - in collaboration Roel lammerant, Jenna Hölttä, Janina Pykäri, Anna Villnäs, Sofia Wikström, Alf Norkko & Camilla gustafsson.
+## Correspondence concerning these data should be directed to Roel Lammerant (Roel.lammerant@outlook.be).
+
+## Description: 
+Spatial field survey in august 2023, were macrophyte material was destructively harvested at 20 sites along in the Pojo_Hanko archipelago, Finland.   
+Salinity data was collected during site scouting and sediment characteristics were analyzed using TGA701 Thermo-gravimetric Analyzer for LOI and a particle size analyzer for the sand and clay fraction
+
+## Metadata are in the form of: # Variable - description with units
+
+# Variable list:
+
+# Site - Site number combined with exposure category
+# Exposure - Exposure categories (Exposed, Semi, Sheltered and Pojo)
+# Salinity - Salinity of surface water in ppt 
+# LOI - Organic matter content as loss of ignition of the top 1cm of sediment in %
+# Percent Sand - Sand content of the top 1cm of sediment in %
+# Percent Clay - Clay content of the top 1cm of sediment in %
+
+
+
+
+
+
+
+
