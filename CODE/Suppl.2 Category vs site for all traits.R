@@ -1,3 +1,6 @@
+#### Run all files 1A and 1B again
+
+
 CategoryLevel_Height<- Indices_height_AllsitesB[c(1:117),]
 CategoryLevel_Height$CWM_Height <- as.numeric(CategoryLevel_Height$CWM_Height)
 CategoryLevel_Height$FDis_Height <- as.numeric(CategoryLevel_Height$FDis_Height)
@@ -75,7 +78,7 @@ png(
   width = 16,
   height = 8,
   units = 'in',
-  res = 600
+  res = 900
 )
 par(mfcol=c(2,5))
 
@@ -230,7 +233,7 @@ boxplot(CWM_SLA ~ Exposure_Depth, data = CategoryLevel_SLA,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = "SLA",
         xlab = NA, ylab = NA, at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.2, ylim = c(0, 1.2))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.2)
 
 stripchart(CWM_SLA ~ Exposure_Depth,
            data = CategoryLevel_SLA,
@@ -252,7 +255,7 @@ boxplot(CWM_SLA ~ Exposure_Depth, data = SiteLevel_SLA,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = NA, at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.2, ylim = c(0, 1.2))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.2)
 
 stripchart(CWM_SLA ~ Exposure_Depth,
            data = SiteLevel_SLA,
@@ -276,7 +279,7 @@ boxplot(CWM_LAP ~ Exposure_Depth, data = CategoryLevel_LAP,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = "LAP",
         xlab = NA, ylab = NA, at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.2, ylim = c(0, 0.8))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.2)
 
 stripchart(CWM_LAP ~ Exposure_Depth,
            data = CategoryLevel_LAP,
@@ -298,7 +301,7 @@ boxplot(CWM_LAP ~ Exposure_Depth, data = SiteLevel_LAP,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM at site level", at = c(1, 2, 4, 5),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.2, ylim = c(0, 0.8))
+        lex.order = TRUE, xaxt="n",cex.lab = 1.2)
 
 stripchart(CWM_LAP ~ Exposure_Depth,
            data = SiteLevel_LAP,
