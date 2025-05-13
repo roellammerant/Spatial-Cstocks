@@ -19,7 +19,7 @@ png(
   width = 13,
   height = 8,
   units = 'in',
-  res = 300
+  res = 900
 )
 
 par(mfcol=c(2,2), mar=c(7,4,1,1) +1.0)

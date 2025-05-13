@@ -51,7 +51,6 @@ Shallow_Leaf_IntraB <- Indices_Leaf_SpecificMinusFixedB[ which(Indices_Leaf_Spec
 Indices_leaf_AllsitesB$FDis_SLA[Indices_leaf_AllsitesB$FDis_SLA == 0] <- 0.00001 
 Shallow_Leaf_SpecificB <- Indices_leaf_AllsitesB[ which(Indices_leaf_AllsitesB$Depth=='Shallow'), ]
 
-
 #### FIXED ####
 
 CWMSLA_Fixed <- adonis2(Shallow_Leaf_Fixed$CWM_SLA ~ Exposure + Site_Exposure, data=Shallow_Leaf_Fixed, perm=999)
@@ -88,7 +87,6 @@ FDisSLA_SpecificB # significant difference at exposure and site level
 ####              adjust data for tests                 ####
 #                                                          #
 ##%######################################################%##
-library(stats)
 Indices_Leaf_Fixed$CWM_LAP<- as.numeric(Indices_Leaf_Fixed$CWM_LAP) 
 Indices_Leaf_SpecificMinusFixedB$CWM_LAP<- as.numeric(Indices_Leaf_SpecificMinusFixedB$CWM_LAP) 
 
@@ -131,7 +129,6 @@ Shallow_Leaf_SpecificB <- Indices_leaf_AllsitesB[ which(Indices_leaf_AllsitesB$D
 
 
 #### FIXED ####
-
 CWMLAP_Fixed <- adonis2(Shallow_Leaf_Fixed$CWM_LAP ~ Exposure + Site_Exposure, data=Shallow_Leaf_Fixed, perm=999)
 CWMLAP_Fixed # significant difference at exposure and site level
 
@@ -139,7 +136,6 @@ FDisLAP_Fixed <- adonis2(Shallow_Leaf_Fixed$FDis_LAP ~ Exposure + Site_Exposure 
 FDisLAP_Fixed # significant difference at exposure and site level
 
 #### Intra B ####
-
 CWMLAP_IntraB <- adonis2(Shallow_Leaf_IntraB$CWM_LAP ~ Exposure + Site_Exposure, data=Shallow_Leaf_IntraB, perm=999)
 CWMLAP_IntraB # significant difference at exposure and site level
 
@@ -147,7 +143,6 @@ FDisLAP_IntraB <- adonis2(Shallow_Leaf_IntraB$FDis_LAP ~ Exposure + Site_Exposur
 FDisLAP_IntraB # significant difference at exposure and site level
 
 #### Specific B ####
-
 CWMLAP_SpecificB <- adonis2(Shallow_Leaf_SpecificB$CWM_LAP ~ Exposure + Site_Exposure, data=Shallow_Leaf_SpecificB, perm=999)
 CWMLAP_SpecificB # significant difference at exposure and site level
 
