@@ -51,14 +51,17 @@ Indices_leaf_AllsitesB$Exposure_Depth <- factor(Indices_leaf_AllsitesB$Exposure_
 
 png(
   "output_plot/MainFigure_CWM_All_Indices.jpg",
-  width = 8,
-  height = 20,
+  width = 9,
+  height = 18,
   units = 'in',
   res = 900
 )
 par(mfcol=c(5,1))
 
-par(mar = c(3, 5, 2, 3))
+par(mar = c(2, 6, 2, 2))
+
+par(cex.lab = 2.4, cex.axis = 1.75)
+
 
 ############## height ##############
 
@@ -66,7 +69,7 @@ boxplot(CWM_Height ~ Exposure_Depth, data = Indices_height_Allsites,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM of Height",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(CWM_Height ~ Exposure_Depth,
            data = Indices_height_Allsites,
@@ -77,16 +80,9 @@ stripchart(CWM_Height ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE, cex.axis = 1.6)
-
 legend("topleft", legend = c("Shallow", "Deep"), 
        col=c("bisque","azure2"),
-       pch = 15, bty = "n", pt.cex = 3, cex = 1.6,  horiz = F)
+       pch = 15, bty = "n", pt.cex = 3, cex = 2.25,  horiz = F)
 
 ############## root to shoot ratio ##############
 
@@ -94,7 +90,7 @@ boxplot(CWM_Ratio ~ Exposure_Depth, data = Indices_Ratio_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM of R:S ratio",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(CWM_Ratio ~ Exposure_Depth,
            data = Indices_Ratio_AllsitesB,
@@ -105,12 +101,6 @@ stripchart(CWM_Ratio ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
 
 ############## root depth ##############
 
@@ -118,7 +108,7 @@ boxplot(CWM_RootDepth ~ Exposure_Depth, data = Indices_RootDepth_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM of Root depth",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(CWM_RootDepth ~ Exposure_Depth,
            data = Indices_RootDepth_AllsitesB,
@@ -129,12 +119,6 @@ stripchart(CWM_RootDepth ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
 
 ############## SLA ##############
 
@@ -142,7 +126,7 @@ boxplot(CWM_SLA ~ Exposure_Depth, data = Indices_leaf_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM of SLA",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(CWM_SLA ~ Exposure_Depth,
            data = Indices_leaf_AllsitesB,
@@ -153,20 +137,14 @@ stripchart(CWM_SLA ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
-
 ############## LAP ##############
+par(mar = c(5, 6, 2, 2))
 
 boxplot(CWM_LAP ~ Exposure_Depth, data = Indices_leaf_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
         xlab = NA, ylab = "CWM of LAP",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(CWM_LAP ~ Exposure_Depth,
            data = Indices_leaf_AllsitesB,
@@ -180,9 +158,9 @@ stripchart(CWM_LAP ~ Exposure_Depth,
 label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
 
 axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
+     at = seq(1.5 , 11 , 2.65), 
      labels = label , 
-     tick=FALSE , cex.axis = 1.6)
+     tick=FALSE , cex.axis = 2.5)
 
 dev.off()
 
@@ -194,22 +172,25 @@ dev.off()
 
 png(
   "output_plot/MainFigure_FDis_All_Indices.jpg",
-  width = 8,
-  height = 20,
+  width = 9,
+  height = 18,
   units = 'in',
   res = 900
 )
 par(mfcol=c(5,1))
 
-par(mar = c(3, 5, 2, 3))
+par(mar = c(2, 6, 2, 2))
+
+par(cex.lab = 2.4, cex.axis = 1.75)
+
 
 ############## height ##############
 
 boxplot(FDis_Height ~ Exposure_Depth, data = Indices_height_Allsites,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
-        xlab = NA, ylab = "FDis of Height",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        xlab = NA, ylab = "CWM of Height",at = c(1, 2, 4, 5, 7, 9, 10),
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(FDis_Height ~ Exposure_Depth,
            data = Indices_height_Allsites,
@@ -220,24 +201,17 @@ stripchart(FDis_Height ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis=1.6)
-
 legend("topleft", legend = c("Shallow", "Deep"), 
        col=c("bisque","azure2"),
-       pch = 15, bty = "n", pt.cex = 3, cex = 1,  horiz = F)
+       pch = 15, bty = "n", pt.cex = 3, cex = 2.25,  horiz = F)
 
 ############## root to shoot ratio ##############
 
 boxplot(FDis_Ratio ~ Exposure_Depth, data = Indices_Ratio_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
-        xlab = NA, ylab = "FDis of R:S ratio",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        xlab = NA, ylab = "CWM of R:S ratio",at = c(1, 2, 4, 5, 7, 9, 10),
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(FDis_Ratio ~ Exposure_Depth,
            data = Indices_Ratio_AllsitesB,
@@ -248,20 +222,14 @@ stripchart(FDis_Ratio ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
 
 ############## root depth ##############
 
 boxplot(FDis_RootDepth ~ Exposure_Depth, data = Indices_RootDepth_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
-        xlab = NA, ylab = "FDis of Root depth",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        xlab = NA, ylab = "CWM of Root depth",at = c(1, 2, 4, 5, 7, 9, 10),
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(FDis_RootDepth ~ Exposure_Depth,
            data = Indices_RootDepth_AllsitesB,
@@ -272,20 +240,14 @@ stripchart(FDis_RootDepth ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
 
 ############## SLA ##############
 
 boxplot(FDis_SLA ~ Exposure_Depth, data = Indices_leaf_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
-        xlab = NA, ylab = "FDis of SLA",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        xlab = NA, ylab = "CWM of SLA",at = c(1, 2, 4, 5, 7, 9, 10),
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(FDis_SLA ~ Exposure_Depth,
            data = Indices_leaf_AllsitesB,
@@ -296,20 +258,14 @@ stripchart(FDis_SLA ~ Exposure_Depth,
            vertical = TRUE,
            add = TRUE)
 
-label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
-
-axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
-     labels = label , 
-     tick=FALSE , cex.axis = 1.6)
-
 ############## LAP ##############
+par(mar = c(5, 6, 2, 2))
 
 boxplot(FDis_LAP ~ Exposure_Depth, data = Indices_leaf_AllsitesB,
         boxwex = 0.5, col = c("bisque","azure2","bisque","azure2","bisque","bisque","azure2"),
         main = NA,
-        xlab = NA, ylab = "FDis of LAP",at = c(1, 2, 4, 5, 7, 9, 10),
-        lex.order = TRUE, xaxt="n",cex.lab = 1.6)
+        xlab = NA, ylab = "CWM of LAP",at = c(1, 2, 4, 5, 7, 9, 10),
+        lex.order = TRUE, xaxt="n",cex.lab = 2.25)
 
 stripchart(FDis_LAP ~ Exposure_Depth,
            data = Indices_leaf_AllsitesB,
@@ -323,9 +279,8 @@ stripchart(FDis_LAP ~ Exposure_Depth,
 label=c("Exposed", "Semi-sheltered", "Sheltered", "Pojo bay")
 
 axis(1, 
-     at = seq(1.80 , 10 , 2.5), 
+     at = seq(1.5 , 10 , 2.65), 
      labels = label , 
-     tick=FALSE , cex.axis = 1.6)
+     tick=FALSE , cex.axis = 2.5)
 
 dev.off()
-

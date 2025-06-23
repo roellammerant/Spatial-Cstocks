@@ -155,7 +155,7 @@ png(
 )
 
 par(mfcol = c(2, 2), mar = c(1, 1, 0, 0.5))  
-
+par(cex.lab = 1.2, cex.axis = 1.2)
 #######################
 ### FIGURE OF sites ###
 #######################
@@ -163,7 +163,7 @@ par(mfcol = c(2, 2), mar = c(1, 1, 0, 0.5))
 image_data <- load.image("C:/Users/roell/OneDrive/Bureaublad/Github/Coastclim Spatial/Spatial-23-CoastClim/output_plot/Map_sitegroup_colors.png")
 plot(image_data, axes = FALSE)
 
-mtext("A", 3, -1.25, adj=0.05, font=2)
+mtext("A", 3, -1.25, adj=0.05, font=2, cex = 1.2)
 
 
 #######################
@@ -176,26 +176,26 @@ ordiplot(nmdsB, display = "species", cex = 1.5, xlim = c(-2.3,3.5), ylab="NMDS2"
 dataEllipse(data.scoresB$NMDS1, data.scoresB$NMDS2, groups = as.factor(data.scoresB$Site_group), levels = c(0.60), 
             center.pch =FALSE,  plot.points = FALSE, group.labels = NA, col=colors)
 
-text(1.064122079, 0.25366121, expression("C. demersum"))
-text(0.000725299, -0.930, expression("M. spicatum"))
-text(-0.845397347, 0.770, expression("R. cirrhosa"))
-text(-0.874367214, -1, expression("R. baudotti"))
-text(-1.074251583, 0.364, expression("Z. major"))
-text(-0.316448835 , 1, expression("S. pectinata"))
-text(-1.8, -0.45444449, expression("Z. marina"))
-text(2.15,-0.63773488,expression("L. trisulca"))
-text(1.495955489,0.00655396, expression("M. sibiricum"))
-text(1.532480937,0.6, expression("N. lutea"))
-text(-0.750562000, -0.36740262, expression("P. perfoliatus"))
-text(2.27517475, -0.80189288, expression("Fontinalis Sp."))
-text(2.35, -0.98839380, expression("Sparganium Sp."))
-text( 1.0051941252, -0.65978410, expression("R. circunatus"))
-text(3.240411228,  0.75350624, expression("P. nitens"))
-text(1.946877033, -1.19134342, expression("P. obtusifolius"))
-text(2.082468368, -0.27188921, expression("N. marina"))
-text(2.913322221, -0.07091259, expression("C. hermaprhoditica"))
+text(1.064122079, 0.25366121, expression("C. demersum"),cex = 1.2)
+text(0.000725299, -0.930, expression("M. spicatum"),cex = 1.2)
+text(-0.93397347, 0.780, expression("R. cirrhosa"),cex = 1.2)
+text(-0.914367214, -1.05, expression("R. baudotti"),cex = 1.2)
+text(-1.074251583, 0.354, expression("Z. major"),cex = 1.2)
+text(-0.316448835 , 1, expression("S. pectinata"),cex = 1.2)
+text(-1.82, -0.43444449, expression("Z. marina"),cex = 1.2)
+text(2.20,-0.59773488,expression("L. trisulca"),cex = 1.2)
+text(1.495955489,0.11155396, expression("M. sibiricum"),cex = 1.2)
+text(1.532480937,0.6, expression("N. lutea"),cex = 1.2)
+text(-0.750562000, -0.35740262, expression("P. perfoliatus"),cex = 1.2)
+text(2.27517475, -0.80189288, expression("Fontinalis Sp."),cex = 1.2)
+text(2.35, -0.98839380, expression("Sparganium Sp."),cex = 1.2)
+text( 1.0051941252, -0.65978410, expression("R. circunatus"),cex = 1.2)
+text(3.240411228,  0.75350624, expression("P. nitens"),cex = 1.2)
+text(1.946877033, -1.19134342, expression("P. obtusifolius"),cex = 1.2)
+text(2.082468368, -0.38188921, expression("N. marina"),cex = 1.2)
+text(2.913322221, -0.17091259, expression("C. hermaprhoditica"),cex = 1.2)
 
-mtext("C", 3, 0.25, adj=0, font=2)
+mtext("C", 3, 0.25, adj=0, font=2,cex = 1.2)
 
 ##################################################################
 ### FIGURE OF ORDINATION
@@ -212,7 +212,7 @@ plot(ord$x[,1:2], pch=16, col=c("burlywood3","burlywood3","burlywood3","burlywoo
 dataEllipse(data.scores$PC1, data.scores$PC2, groups = as.factor(data.scores$Exposure), levels = c(0.60), 
             center.pch =FALSE,  plot.points = FALSE, group.labels = NA, col=colors)
 
-mtext("B", 3, 0.25, adj=0.0, font=2)
+mtext("B", 3, 0.25, adj=0.0, font=2,cex = 1.2)
 abline(v=0, h=0, lty=3)
 
 l.x <- ord$rotation[,1]*1.5
@@ -221,16 +221,15 @@ l.y <- ord$rotation[,2]*1.5
 arrows(rep(0,11), rep(0,11), l.x, l.y, len=0.1, lwd=1.25)
 
 
-text(-0.82, -1.4, expression("Salinity"))
-text(0.90, -0.72, expression("LOI"))
-text(-0.99, 0.37, expression("Sand %"))
-text(1.00, -0.33, expression("Clay %"))
+text(-0.95, -1.4, expression("Salinity"),cex = 1.2)
+text(0.93, -0.72, expression("LOI"),cex = 1.2)
+text(-1.10, 0.37, expression("Sand %"),cex = 1.2)
+text(1.10, -0.33, expression("Clay %"),cex = 1.2)
 
 legend("topleft",
        legend = c("Exposed", "Semi-sheltered", "Shelted", "Pojo bay"),
-       pch = 19,
        col = c("#DEB887","#98FB98","#DDA0DD","#FFA500"),
-       cex = 0.95)
+       pch = 15, bty = "n", pt.cex = 3, cex = 1.4,  horiz = F)
 
 ###########################
 ### Species NMDS data   ###
@@ -240,6 +239,6 @@ plot(data.scoresB$NMDS1, data.scoresB$NMDS2,  col = colors[as.factor(data.scores
 dataEllipse(data.scoresB$NMDS1, data.scoresB$NMDS2, groups = as.factor(data.scoresB$Site_group), levels = c(0.60), 
             center.pch =FALSE,  plot.points = FALSE, group.labels = NA, col=colors)
 
-mtext("D", 3, 0.25, adj=0, font=2)
+mtext("D", 3, 0.25, adj=0, font=2,cex = 1.2)
 
 dev.off()
